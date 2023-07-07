@@ -17,7 +17,9 @@ function App() {
   return (
     <>
       <Alert>Hello World</Alert>
-      <Button />
+      <Button color="primary" onClick={() => console.log("first")}>
+        My Button
+      </Button>
     </>
   );
 }
