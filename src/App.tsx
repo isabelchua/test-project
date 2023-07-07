@@ -1,5 +1,6 @@
 import Alert from "./Alert";
 import ListGroup from "./components/ListGroup";
+import Button from "./components/Button";
 
 function App() {
   //   let items = ["New York", "San Francisco", "Hawaii", "London", "Tokyo"];
@@ -13,7 +14,12 @@ function App() {
   //      onSelectItem={handleSelectItem}
   //    /> */}
 
-  return <Alert>Hello World</Alert>;
+  return (
+    <>
+      <Alert>Hello World</Alert>
+      <Button />
+    </>
+  );
 }
 
 export default App;
