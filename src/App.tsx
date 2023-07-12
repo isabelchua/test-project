@@ -18,9 +18,11 @@ function App() {
 
   return (
     <>
-      {alertVisible && <Alert>Hello World</Alert>}
+      {alertVisible && (
+        <Alert onClose={() => setAlertVisibility(false)}>Hello World</Alert>
+      )}
 
-      <Button color="primary" onClick={() => setAlertVisibility(!alertVisible)}>
+      <Button color="primary" onClick={() => setAlertVisibility(true)}>
         My Button
       </Button>
     </>
